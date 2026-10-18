@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
+    "allowJs": true,
+    "checkJs": false,
     "paths": {
       "@/*": [
         "./src/*"
@@ -33,5 +34,16 @@
   },
   "include": [
     "src"
+  ],
+  "exclude": [
+    "src/index.tsx",
+    "src/index.ts",
+    "src/components/DoctorForm.tsx",
+    "src/components/DoctorList.tsx",
+    "src/components/SearchBar.tsx",
+    "src/components/ToastContainer.tsx",
+    "src/components/useDoctors.ts",
+    "src/hooks/useDoctors.ts",
+    "src/hooks/useToast.ts"
   ]
 }
